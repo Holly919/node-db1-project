@@ -15,6 +15,14 @@ SELECT * FROM Orders
 ORDER BY OrderDate desc
 LIMIT 10;
 
+--OR
+SELECT TOP 10 * 
+FROM Orders
+ORDER BY OrderDate DESC
+
+
+
+
 -- Find all customers that live in London, Madrid, or Brazil
 SELECT * FROM Customers
 WHERE City = "London" or City = "Madrid" or Country = "Brazil";
